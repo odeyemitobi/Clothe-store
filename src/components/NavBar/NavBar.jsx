@@ -22,11 +22,11 @@ function NavBar() {
               <h1>USD</h1>
               <FiChevronDown />
             </div>
-            <div onClick={() => navigate("/men")}>
-              <h1>Men</h1>
+            <div onClick={() => navigate("/cosmetics")}>
+              <h1>Perfumes</h1>
             </div>
-            <div onClick={() => navigate("/women")}>
-              <h1>Women</h1>
+            <div onClick={() => navigate("/wine")}>
+              <h1>Wine</h1>
             </div>
             <div onClick={() => navigate("/children")}>
               <h1>Children</h1>
@@ -36,7 +36,7 @@ function NavBar() {
             </div>
           </div>
           <div className="flex items-center">
-            <h1 className=" text-[30px] font-bold cursor-pointer tracking-[2px]">
+            <h1 className="first text-[30px] font-bold cursor-pointer tracking-[2px]">
               TESTIMONYSTORE
             </h1>
           </div>
