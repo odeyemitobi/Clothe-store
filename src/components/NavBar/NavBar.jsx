@@ -13,25 +13,25 @@ function NavBar() {
     <div className=" bg-black">
       <div className="h-[80px] text-white">
         <div className="flex justify-between py-[10px] px-[30px]">
-          <div className="flex items-center cursor-pointer gap-6">
-            <div className="flex items-center">
+          <div className="flex items-center gap-6">
+            <div className="flex items-center cursor-pointer">
               <img className="h-4" src={flag} alt="flag" />
               <FiChevronDown />
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center cursor-pointer">
               <h1>USD</h1>
               <FiChevronDown />
             </div>
-            <div onClick={() => navigate("/cosmetics")}>
+            <div className="cursor-pointer" onClick={() => navigate("/cosmetics")}>
               <h1>Perfumes</h1>
             </div>
-            <div onClick={() => navigate("/wine")}>
+            <div className="cursor-pointer" onClick={() => navigate("/wine")}>
               <h1>Wine</h1>
             </div>
-            <div onClick={() => navigate("/children")}>
+            <div className="cursor-pointer" onClick={() => navigate("/children")}>
               <h1>Children</h1>
             </div>
-            <div onClick={() => navigate("/accessories")}>
+            <div className="cursor-pointer" onClick={() => navigate("/accessories")}>
               <h1>Accessories</h1>
             </div>
           </div>
@@ -60,10 +60,10 @@ function NavBar() {
               Stores
             </div>
             <div className="flex items-center gap-4 text-[#777]">
-              <AiOutlineSearch size={20} />
-              <PersonOutlineOutlined />
-              <MdOutlineFavoriteBorder size={20} />
-              <div className="flex items-center relative">
+              <AiOutlineSearch size={20} className="cursor-pointer" />
+              <PersonOutlineOutlined className="cursor-pointer" />
+              <MdOutlineFavoriteBorder size={20} className="cursor-pointer" />
+              <div className="flex items-center relative cursor-pointer">
                 <MdOutlineShoppingCart size={20} />
                 <span className="w-5 absolute text-[12px] h-5 rounded-[50%] bg-[#2879fe] text-white right-[-10px] top-[-10px] justify-center items-center flex">
                   0
