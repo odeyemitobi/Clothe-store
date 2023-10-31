@@ -22,29 +22,38 @@ function NavBar() {
               <h1>USD</h1>
               <FiChevronDown />
             </div>
-            <div className="cursor-pointer" onClick={() => navigate("/cosmetics")}>
+            <div
+              className="cursor-pointer"
+              onClick={() => navigate("/cosmetics")}
+            >
               <h1>Perfumes</h1>
             </div>
             <div className="cursor-pointer" onClick={() => navigate("/wine")}>
               <h1>Wine</h1>
             </div>
-            <div className="cursor-pointer" onClick={() => navigate("/children")}>
+            <div
+              className="cursor-pointer"
+              onClick={() => navigate("/children")}
+            >
               <h1>Children</h1>
             </div>
-            <div className="cursor-pointer" onClick={() => navigate("/accessories")}>
+            <div
+              className="cursor-pointer"
+              onClick={() => navigate("/accessories")}
+            >
               <h1>Accessories</h1>
             </div>
           </div>
           <div className="flex items-center">
-            <h1 className="first text-[30px] font-bold cursor-pointer tracking-[2px]">
+            <h1
+              onClick={() => navigate("/")}
+              className="first text-[30px] font-bold cursor-pointer tracking-[2px]"
+            >
               TESTIMONYSTORE
             </h1>
           </div>
           <div className="flex items-center gap-6">
-            <div
-              onClick={() => navigate("/homepage")}
-              className="cursor-pointer"
-            >
+            <div onClick={() => navigate("/")} className="cursor-pointer">
               Homepage
             </div>
             <div onClick={() => navigate("/about")} className="cursor-pointer">

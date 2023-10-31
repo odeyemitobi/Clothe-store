@@ -15,8 +15,16 @@ import Men from "../../Assets/pictures/mens.jpg";
 import Ute from "../../Assets/pictures/utensils.jpg";
 import Baby from "../../Assets/pictures/bbyfood.jpg";
 import Cloth from "../../Assets/pictures/clothes.jpg";
+import { useNavigate } from "react-router";
+import { FaFacebookSquare } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
+import { BsLinkedin } from "react-icons/bs"
+import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <Mainlayout>
       <div>
@@ -104,14 +112,26 @@ function Home() {
             <div className=" flex-1 flex flex-col gap-3">
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Wine} alt="" />
+                <button
+                  onClick={() => navigate("/products")}
+                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                >
+                  <p className=" font-bold">Wine</p>
+                </button>
               </div>
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Ute} alt="" />
+                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                  <p className=" font-bold">Utensils</p>
+                </button>
               </div>
             </div>
             <div className=" flex-1 flex flex-col gap-3">
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Baby} alt="" />
+                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                  <p className=" font-bold">Baby food</p>
+                </button>
               </div>
             </div>
             <div className="feye2 flex-1 flex flex-col gap-3">
@@ -123,6 +143,9 @@ function Home() {
                       src={Cloth}
                       alt=""
                     />
+                    <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                      <p className=" font-bold">Clothes</p>
+                    </button>
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col gap-3">
@@ -132,11 +155,17 @@ function Home() {
                       src={Women}
                       alt=""
                     />
+                    <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                      <p className=" font-bold">Women Accessories</p>
+                    </button>
                   </div>
                 </div>
               </div>
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Men} alt="" />
+                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                  <p className=" font-bold">Men Accessories</p>
+                </button>
               </div>
             </div>
           </div>
@@ -213,6 +242,37 @@ function Home() {
                 <div className="font-bold flex gap-5">
                   <h3 className="text-gray-500 line-through">$7</h3>
                   <h3>$5</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-14">
+          <div className="py-4 bg-black">
+            <div className="flex text-white place-items-center items-center justify-center gap-[13rem]">
+              <div>
+                <p className="font-semibold">BE IN TOUCH WITH US:</p>
+              </div>
+              <div className="">
+                <div className="rounded-full border-white border-[1px] border-solid pr-4 flex cursor-pointer text-white">
+                  <div className="bg-white rounded-s-2xl text-center pt-1 px-2">
+                    <p className="text-black font-bold">SEND</p>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Enter your e-mail"
+                    className="text-sm ml-2 py-2 mr-[1rem] w-[75%] bg-transparent focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div className="">
+                <div className="flex gap-3">
+                  <FaFacebookSquare size={25} color="#1877F2" />
+                  <BsInstagram size={25} color="#C13584" />
+                  <FaXTwitter size={25} />
+                  <FcGoogle size={25} />
+                  <BsLinkedin size={25} color="#0072b1" />
                 </div>
               </div>
             </div>
