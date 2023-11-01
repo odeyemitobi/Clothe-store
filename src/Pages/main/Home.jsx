@@ -19,7 +19,7 @@ import { useNavigate } from "react-router";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
-import { BsLinkedin } from "react-icons/bs"
+import { BsLinkedin } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 
 function Home() {
@@ -121,7 +121,10 @@ function Home() {
               </div>
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Ute} alt="" />
-                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                <button
+                  onClick={() => navigate("/products")}
+                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                >
                   <p className=" font-bold">Utensils</p>
                 </button>
               </div>
@@ -129,7 +132,10 @@ function Home() {
             <div className=" flex-1 flex flex-col gap-3">
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Baby} alt="" />
-                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                <button
+                  onClick={() => navigate("/products")}
+                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                >
                   <p className=" font-bold">Baby food</p>
                 </button>
               </div>
@@ -143,7 +149,10 @@ function Home() {
                       src={Cloth}
                       alt=""
                     />
-                    <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                    <button
+                      onClick={() => navigate("/products")}
+                      className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                    >
                       <p className=" font-bold">Clothes</p>
                     </button>
                   </div>
@@ -155,7 +164,10 @@ function Home() {
                       src={Women}
                       alt=""
                     />
-                    <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                    <button
+                      onClick={() => navigate("/products")}
+                      className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                    >
                       <p className=" font-bold">Women Accessories</p>
                     </button>
                   </div>
@@ -163,7 +175,10 @@ function Home() {
               </div>
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Men} alt="" />
-                <button className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer">
+                <button
+                  onClick={() => navigate("/products")}
+                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                >
                   <p className=" font-bold">Men Accessories</p>
                 </button>
               </div>

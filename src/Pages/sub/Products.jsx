@@ -3,19 +3,20 @@ import { useState } from "react";
 import { useParams } from "react-router";
 import Mainlayout from "../../Layouts/Mainlayout";
 import Men from "../../Assets/pictures/mens.jpg";
+import List from "../../components/List/List"
 
 function Products() {
   const catId = parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(1000);
-  const [sort, setSort] = useState(null);
+  const [sortby, setSortby] = useState(null);
   const [selectedSubCats, setSelectedSubCats] = useState([]);
 
   return (
     <Mainlayout>
-      <div>
-        <div>
-          <div>
-            <h1>Categories</h1>
+      <div className="flex px-8 py-14">
+        <div className="flex-1 sticky h-full top-[50px]">
+          <div className="mb-7">
+            <h1 className="font-medium mb-5 text-2xl">Categories</h1>
             <div>
               <input
                 className="cursor-pointer"
@@ -71,8 +72,8 @@ function Products() {
               <label htmlFor="6">Men Accessories</label>
             </div>
           </div>
-          <div>
-            <h1>Filter</h1>
+          <div className="mb-7">
+            <h1 className="font-medium mb-5 text-2xl">Filter</h1>
             <div>
               <span>0</span>
               <input
@@ -85,8 +86,8 @@ function Products() {
               <span>{maxPrice}</span>
             </div>
           </div>
-          <div>
-            <h1>Sort by</h1>
+          <div className="mb-7">
+            <h1 className="font-medium mb-5 text-2xl">Sort by</h1>
             <div>
               <input
                 className="cursor-pointer"
@@ -94,25 +95,26 @@ function Products() {
                 id="low"
                 value="low"
                 name="price"
-                onChange={(e) => setSort("low")}
+                onChange={(e) => setSortby("low")}
               />
               <label htmlFor="low">Price (Lowest first)</label>
             </div>
             <div>
               <input
                 className="cursor-pointer"
-                type="radio" 
+                type="radio"
                 id="high"
                 value="high"
                 name="price"
-                onChange={(e) => setSort("high")}
+                onChange={(e) => setSortby("high")}
               />
               <label htmlFor="high">Price (Highest first)</label>
             </div>
           </div>
         </div>
-        <div>
-          <img src={Men} alt="" />
+        <div className="catalo">
+          <img className="w-full h-[300px] object-cover mb-12" src={Men} alt="" />
+          <List catId={catId} maxPrice={maxPrice} sort={sortby} />
         </div>
       </div>
     </Mainlayout>

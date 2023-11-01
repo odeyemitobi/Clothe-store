@@ -62,3 +62,11 @@ code {
 .feye2{
   flex: 2;
 }
+
+.catalo{
+  flex: 3;
+}
+
+label {
+  margin-left: 10px;
+}
