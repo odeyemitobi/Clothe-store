@@ -65,7 +65,7 @@ function NavBar() {
             >
               Contact
             </div>
-            <div onClick={() => navigate("/stores")} className="cursor-pointer">
+            <div onClick={() => navigate("/products")} className="cursor-pointer">
               Stores
             </div>
             <div className="flex items-center gap-4 text-[#777]">

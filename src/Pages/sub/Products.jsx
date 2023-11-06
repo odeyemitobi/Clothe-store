@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router";
+import { useNavigate } from "react-router";
 import Mainlayout from "../../Layouts/Mainlayout";
 import Men from "../../Assets/pictures/mens.jpg";
-import List from "../../components/List/List"
+import List from "../../components/List/List";
 
 function Products() {
+  const navigate = useNavigate();
+
   const catId = parseInt(useParams().id);
   const [maxPrice, setMaxPrice] = useState(1000);
   const [sortby, setSortby] = useState(null);
@@ -113,8 +116,14 @@ function Products() {
           </div>
         </div>
         <div className="catalo">
-          <img className="w-full h-[300px] object-cover mb-12" src={Men} alt="" />
-          <List catId={catId} maxPrice={maxPrice} sort={sortby} />
+          <img
+            className="w-full h-[300px] object-cover mb-12"
+            src={Men}
+            alt=""
+          />
+          <div onClick={() => navigate("/mainproducts")}>
+            <List catId={catId} maxPrice={maxPrice} sort={sortby} />
+          </div>
         </div>
       </div>
     </Mainlayout>
