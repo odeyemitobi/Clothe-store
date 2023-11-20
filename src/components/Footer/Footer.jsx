@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="mx-[200px] mt-[100px] mb-[20px]">
       <div className="flex gap-12">
-        <div className="flex flex-col gap-2 fit grey text-[14px]">
+        <div className="flex flex-col gap-2 fit grey text-[14px] cursor-pointer">
           <h1 className="font-medium text-[18px] text-[#555]">Categories</h1>
           <span>Women</span>
           <span>Men</span>
@@ -12,7 +12,7 @@ function Footer() {
           <span>Accessories</span>
           <span>New Arrivals</span>
         </div>
-        <div className="flex flex-col gap-2 fit grey text-[14px]">
+        <div className="flex flex-col gap-2 fit grey text-[14px] cursor-pointer">
           <h1 className="font-medium text-[18px] text-[#555]">Links</h1>
           <span>FAQ</span>
           <span>Pages</span>
@@ -20,7 +20,7 @@ function Footer() {
           <span>Compare</span>
           <span>Cookies</span>
         </div>
-        <div className="flex flex-col gap-2 fit grey text-[14px]">
+        <div className="flex flex-col gap-2 fit grey text-[14px] cursor-pointer">
           <h1 className="font-medium text-[18px] text-[#555]">About</h1>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
@@ -28,7 +28,7 @@ function Footer() {
             eaque, voluptates dolore minus, omnis corporis facere nemo vitae.
           </span>
         </div>
-        <div className="flex flex-col gap-2 fit grey text-[14px]">
+        <div className="flex flex-col gap-2 fit grey text-[14px] cursor-pointer">
           <h1 className="font-medium text-[18px] text-[#555]">Contact</h1>
           <span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,

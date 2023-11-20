@@ -47,7 +47,10 @@ function Home() {
             </div>
             <div className="flex justify-center gap-[50px] pt-12">
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/mainproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-full" src={Chanel1} alt="chanel1" />
                   <div className="overlay">
                     <img
@@ -114,7 +117,7 @@ function Home() {
                 <img className="w-full h-full object-cover" src={Wine} alt="" />
                 <button
                   onClick={() => navigate("/products")}
-                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                  className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                 >
                   <p className=" font-bold">Wine</p>
                 </button>
@@ -123,7 +126,7 @@ function Home() {
                 <img className="w-full h-full object-cover" src={Ute} alt="" />
                 <button
                   onClick={() => navigate("/products")}
-                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                  className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                 >
                   <p className=" font-bold">Utensils</p>
                 </button>
@@ -134,7 +137,7 @@ function Home() {
                 <img className="w-full h-full object-cover" src={Baby} alt="" />
                 <button
                   onClick={() => navigate("/products")}
-                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                  className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                 >
                   <p className=" font-bold">Baby food</p>
                 </button>
@@ -151,7 +154,7 @@ function Home() {
                     />
                     <button
                       onClick={() => navigate("/products")}
-                      className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                      className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                     >
                       <p className=" font-bold">Clothes</p>
                     </button>
@@ -166,7 +169,7 @@ function Home() {
                     />
                     <button
                       onClick={() => navigate("/products")}
-                      className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                      className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                     >
                       <p className=" font-bold">Women Accessories</p>
                     </button>
@@ -177,7 +180,7 @@ function Home() {
                 <img className="w-full h-full object-cover" src={Men} alt="" />
                 <button
                   onClick={() => navigate("/products")}
-                  className="absolute min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
+                  className="absolute hover:bg-red-400 hover:text-white min-w-[100px] w-fit bg-white rounded top-0 bottom-0 left-0 right-0 h-12 p-3 m-auto cursor-pointer"
                 >
                   <p className=" font-bold">Men Accessories</p>
                 </button>

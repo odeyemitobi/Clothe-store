@@ -34,7 +34,7 @@ code {
 }
 
 .first::first-letter {
-  color: brown;
+  color: #a52a2a;
   font-size: 44px;
   text-transform: uppercase;
 }
@@ -69,4 +69,8 @@ code {
 
 label {
   margin-left: 10px;
+}
+
+.flowkey{
+  flex: 5;
 }

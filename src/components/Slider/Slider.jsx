@@ -42,13 +42,13 @@ function Slider() {
       <div className="w-fit flex absolute left-0 right-0 gap-[10px] m-auto bottom-[100px]">
         <div
           onClick={prevSlide}
-          className="w-[50px] h-[50px] bg-slate-800 text-white hover:bg-[red] cursor-pointer rounded-[50%] border-[1px] border-solid border-[#999] flex items-center justify-center"
+          className="w-[50px] h-[50px] bg-slate-800 text-white hover:bg-[#a52a2a] cursor-pointer rounded-[50%] border-[1px] border-solid border-[#999] flex items-center justify-center"
         >
           <GoArrowLeft size={30} />
         </div>
         <div
           onClick={nextSlide}
-          className="w-[50px] h-[50px] bg-slate-800 text-white hover:bg-[red] cursor-pointer rounded-[50%] border-[1px] border-solid border-[#999] flex items-center justify-center"
+          className="w-[50px] h-[50px] bg-slate-800 text-white hover:bg-[#a52a2a] cursor-pointer rounded-[50%] border-[1px] border-solid border-[#999] flex items-center justify-center"
         >
           <GoArrowRight size={30} />
         </div>
