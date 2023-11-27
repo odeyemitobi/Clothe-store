@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import flag from "../../Assets/pic/fgn.png";
 import { useNavigate } from "react-router";
 import { FiChevronDown } from "react-icons/fi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdOutlineFavoriteBorder, MdOutlineShoppingCart } from "react-icons/md";
 import { PersonOutlineOutlined } from "@mui/icons-material";
+import Cart from "../Cart/Cart";
 
 function NavBar() {
+  const [openCart, setOpenCart] = useState(false);
   const navigate = useNavigate();
 
   return (
@@ -65,14 +67,20 @@ function NavBar() {
             >
               Contact
             </div>
-            <div onClick={() => navigate("/products")} className="cursor-pointer">
+            <div
+              onClick={() => navigate("/products")}
+              className="cursor-pointer"
+            >
               Stores
             </div>
             <div className="flex items-center gap-4 text-[#777]">
               <AiOutlineSearch size={20} className="cursor-pointer" />
               <PersonOutlineOutlined className="cursor-pointer" />
               <MdOutlineFavoriteBorder size={20} className="cursor-pointer" />
-              <div className="flex items-center relative cursor-pointer">
+              <div
+                className="flex items-center relative cursor-pointer"
+                onClick={() => setOpenCart(!openCart)}
+              >
                 <MdOutlineShoppingCart size={20} />
                 <span className="w-5 absolute text-[12px] h-5 rounded-[50%] bg-[#2879fe] text-white right-[-10px] top-[-10px] justify-center items-center flex">
                   0
@@ -82,6 +90,7 @@ function NavBar() {
           </div>
         </div>
       </div>
+      {openCart && <Cart/>}
     </div>
   );
 }
