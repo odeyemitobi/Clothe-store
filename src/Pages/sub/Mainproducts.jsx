@@ -45,14 +45,14 @@ function Mainproducts() {
           </p>
           <div className="flex items-center gap-2">
             <button
-              className="w-[30px] h-[30px] flex items-center justify-center rounded-lg bg-blue-700 text-white"
+              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-blue-700 text-white"
               onClick={() => setQuantity((prev) => (prev === 1 ? 1 : prev - 1))}
             >
               -
             </button>
             {quantity}
             <button
-              className="w-[30px] h-[30px] flex items-center justify-center rounded-lg bg-blue-700 text-white"
+              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-blue-700 text-white"
               onClick={() => setQuantity((prev) => prev + 1)}
             >
               +
@@ -84,9 +84,9 @@ function Mainproducts() {
           <hr />
           <div className=" flex flex-col gap-2 text-[1rem] mt-7 text-gray-500">
             <span>DESCRIPTION</span>
-            <hr className="w-[30%]"/>
+            <hr className="w-[30%]" />
             <span>ADDITIONAL INFORMATION</span>
-            <hr className="w-[30%]"/>
+            <hr className="w-[30%]" />
             <span>FAQ</span>
           </div>
         </div>
