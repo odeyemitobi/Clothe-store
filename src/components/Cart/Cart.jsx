@@ -8,11 +8,11 @@ function Cart() {
   const data = [
     {
       id: 1,
-      image: <img className="h-[8rem] object-cover" src={Chanel1} alt="" />,
-      image2: <img className="h-[10rem]" src={Chanel2} alt="" />,
+      image: <img className="h-[7rem] object-cover" src={Chanel1} alt="" />,
+      image2: <img className="h-[5rem]" src={Chanel2} alt="" />,
       tittle: "CHANEL STRONG FRAGRANCE PERFUME",
       desc: "Chanel perfume",
-      oldPrice: 50,
+      oldPrice: 23000,
       price: 17000,
       isNew: true,
     },
@@ -26,16 +26,16 @@ function Cart() {
           <div className="flex mb-7 gap-5 items-center" key={items.id}>
             {items.image}
             <div>
-              <h1 className="text-[18px] mb-3 font-medium">{items.tittle}</h1>
-              <p className="mb-7 text-[14px]">
+              <h1 className="text-[13px] mb-3 font-medium">{items.tittle}</h1>
+              <p className="mb-5 text-[13px]">
                 {items.desc?.substring(0, 100)}
               </p>
-              <div className="text-blue-500 font-medium">1 x #{items.price}</div>
+              <div className="text-blue-500 text-[105x] font-medium">1 x #{items.price}</div>
             </div>
             <MdDelete className="cursor-pointer" color="red" size={25} />
           </div>
         ))}
-        <div className="flex justify-between font-medium text-lg mb-7">
+        <div className="flex justify-between font-medium text-base mb-7">
           <span>CART SUMMARY</span>
           <span>#17,000</span>
         </div>
