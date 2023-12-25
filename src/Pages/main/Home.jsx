@@ -48,7 +48,7 @@ function Home() {
             <div className="flex justify-center gap-[50px] pt-12">
               <div className="w-[280px] flex flex-col gap-2">
                 <div
-                  onClick={() => navigate("/mainproducts")}
+                  onClick={() => navigate("/channelproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
                 >
                   <img
@@ -72,7 +72,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/herproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Her1} alt="Her1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Her2} alt="Her2" />
@@ -86,7 +89,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/bentleyproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Bent1} alt="Bent1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Bent2} alt="Bent2" />
@@ -100,7 +106,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/paradiseproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Para1} alt="Para1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Para2} alt="Para2" />
@@ -209,7 +218,7 @@ function Home() {
             <div className="flex justify-center gap-[50px] pt-12">
               <div className="w-[280px] flex flex-col gap-2">
                 <div
-                  onClick={() => navigate("/mainproducts")}
+                  onClick={() => navigate("/channelproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
                 >
                   <img
@@ -233,7 +242,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/herproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Her1} alt="Her1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Her2} alt="Her2" />
@@ -247,7 +259,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/bentleyproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Bent1} alt="Bent1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Bent2} alt="Bent2" />
@@ -261,7 +276,10 @@ function Home() {
               </div>
 
               <div className="w-[280px] flex flex-col gap-2">
-                <div className="w-full overflow-hidden relative cursor-pointer joe">
+                <div
+                  onClick={() => navigate("/paradiseproducts")}
+                  className="w-full overflow-hidden relative cursor-pointer joe"
+                >
                   <img className="w-full h-[26rem]" src={Para1} alt="Para1" />
                   <div className="overlay">
                     <img className="w-full h-full" src={Para2} alt="Para2" />
@@ -285,7 +303,7 @@ function Home() {
               </div>
               <div className="">
                 <div className="rounded-full border-white border-[1px] border-solid pr-4 flex cursor-pointer text-white">
-                  <div className="bg-white rounded-s-2xl text-center pt-1 px-2">
+                  <div className="bg-white rounded-s-2xl items-center pt-2 px-2">
                     <p className="text-black font-bold">SEND</p>
                   </div>
                   <input

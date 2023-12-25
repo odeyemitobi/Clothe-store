@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Mainlayout from "../../Layouts/Mainlayout";
-import { ACTIVEIMG } from "./../../misc/activeimg";
-import CartBtn from "./../../components/button/CartBtn";
+import { ACTIVEIMG4 } from "../../misc/activeimg";
+import CartBtn from "../../components/button/CartBtn";
 import { TiShoppingCart } from "react-icons/ti";
 import { MdOutlineFavoriteBorder } from "react-icons/md";
 import { FaBalanceScale } from "react-icons/fa";
+import Mainlayout from "../../Layouts/Mainlayout";
 
-function Mainproducts() {
-  const slides = ACTIVEIMG;
+function Paradiseproduct() {
+  const slides = ACTIVEIMG4;
   const [slide, setSlide] = useState(slides[0]);
   const [quantity, setQuantity] = useState(1);
 
@@ -35,13 +35,11 @@ function Mainproducts() {
           </div>
         </div>
         <div className="flex-1 flex-col flex gap-7">
-          <h1 className="font-bold text-2xl">
-            CHANEL STRONG FRAGRANCE PERFUME{" "}
-          </h1>
-          <span className="text-blue-500 text-[2rem] font-medium">#17,000</span>
+          <h1 className="font-bold text-2xl">PARADISE STRONG FRAGRANCE PERFUME </h1>
+          <span className="text-blue-500 text-[2rem] font-medium">#12,000</span>
           <p className="text-lg font-light text-justify">
-            Channel perfume with very good frangrance that last long for more
-            than 24hours and frangrance stays after washing.
+            Paradise perfume with very good frangrance that last long for more than
+            24hours and frangrance stays after washing.
           </p>
           <div className="flex items-center gap-2">
             <button
@@ -95,4 +93,4 @@ function Mainproducts() {
   );
 }
 
-export default Mainproducts;
+export default Paradiseproduct;

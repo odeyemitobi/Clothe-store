@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import Chanel1 from "../../Assets/images/chanel1.jpg";
 import Chanel2 from "../../Assets/images/chanel2.jpg";
 import Her1 from "../../Assets/images/her1.jpg";
@@ -9,11 +10,16 @@ import Para1 from "../../Assets/images/paradise1.jpg";
 import Para2 from "../../Assets/images/paradise2.jpg";
 
 function List() {
+  const navigate = useNavigate();
+
   return (
     <div className="">
       <div className="flex justify-between flex-wrap">
         <div className="w-[280px] flex flex-col gap-2">
-          <div className="w-full overflow-hidden relative cursor-pointer joe">
+          <div
+            onClick={() => navigate("/channelproducts")}
+            className="w-full overflow-hidden relative cursor-pointer joe"
+          >
             <img className="w-full h-[26rem]" src={Chanel1} alt="chanel1" />
             <div className="overlay">
               <img className="w-full h-full" src={Chanel2} alt="chanel2" />
@@ -27,7 +33,10 @@ function List() {
         </div>
 
         <div className="w-[280px] flex flex-col gap-2">
-          <div className="w-full overflow-hidden relative cursor-pointer joe">
+          <div
+            onClick={() => navigate("/herproducts")}
+            className="w-full overflow-hidden relative cursor-pointer joe"
+          >
             <img className="w-full h-[26rem]" src={Her1} alt="Her1" />
             <div className="overlay">
               <img className="w-full h-full" src={Her2} alt="Her2" />
@@ -41,7 +50,10 @@ function List() {
         </div>
 
         <div className="w-[280px] flex flex-col gap-2">
-          <div className="w-full overflow-hidden relative cursor-pointer joe">
+          <div
+            onClick={() => navigate("/bentleyproducts")}
+            className="w-full overflow-hidden relative cursor-pointer joe"
+          >
             <img className="w-full h-[26rem]" src={Bent1} alt="Bent1" />
             <div className="overlay">
               <img className="w-full h-full" src={Bent2} alt="Bent2" />
@@ -55,7 +67,10 @@ function List() {
         </div>
 
         <div className="w-[280px] flex flex-col gap-2">
-          <div className="w-full overflow-hidden relative cursor-pointer joe">
+          <div
+            onClick={() => navigate("/paradiseproducts")}
+            className="w-full overflow-hidden relative cursor-pointer joe"
+          >
             <img className="w-full h-[26rem]" src={Para1} alt="Para1" />
             <div className="overlay">
               <img className="w-full h-full" src={Para2} alt="Para2" />
