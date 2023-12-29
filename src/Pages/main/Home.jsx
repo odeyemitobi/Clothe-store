@@ -126,7 +126,7 @@ function Home() {
 
           <div className="flex h-[80vh] gap-3 m-3">
             <div className=" flex-1 flex flex-col gap-3">
-              <div className="flex-1 flex gap-3 relative overflow-hidden">
+              <div className="flex-1 flex gap-3 relative overflow-hidden jora">
                 <img className="w-full h-full object-cover" src={Wine} alt="" />
                 <button
                   onClick={() => navigate("/products")}
@@ -135,7 +135,7 @@ function Home() {
                   <p className=" font-bold">Wine</p>
                 </button>
               </div>
-              <div className="flex-1 flex gap-3 relative overflow-hidden">
+              <div className="flex-1 flex gap-3 relative overflow-hidden jora">
                 <img className="w-full h-full object-cover" src={Ute} alt="" />
                 <button
                   onClick={() => navigate("/products")}
@@ -145,7 +145,7 @@ function Home() {
                 </button>
               </div>
             </div>
-            <div className=" flex-1 flex flex-col gap-3">
+            <div className=" flex-1 flex flex-col gap-3 jora">
               <div className="flex-1 flex gap-3 relative overflow-hidden">
                 <img className="w-full h-full object-cover" src={Baby} alt="" />
                 <button
@@ -158,7 +158,7 @@ function Home() {
             </div>
             <div className="feye2 flex-1 flex flex-col gap-3">
               <div className="flex-1 flex gap-3 relative overflow-hidden">
-                <div className="flex-1 flex flex-col gap-3">
+                <div className="flex-1 flex flex-col gap-3 jora">
                   <div className="flex-1 flex gap-3 relative overflow-hidden">
                     <img
                       className="w-full h-full object-cover"
@@ -173,7 +173,7 @@ function Home() {
                     </button>
                   </div>
                 </div>
-                <div className="flex-1 flex flex-col gap-3">
+                <div className="flex-1 flex flex-col gap-3 jora">
                   <div className="flex-1 flex gap-3 relative overflow-hidden">
                     <img
                       className="w-full h-full object-cover"
@@ -189,7 +189,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className="flex-1 flex gap-3 relative overflow-hidden">
+              <div className="flex-1 flex gap-3 relative overflow-hidden jora">
                 <img className="w-full h-full object-cover" src={Men} alt="" />
                 <button
                   onClick={() => navigate("/products")}

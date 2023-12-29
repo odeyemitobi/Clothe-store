@@ -5,9 +5,12 @@ import { FiChevronDown } from "react-icons/fi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdOutlineFavoriteBorder, MdOutlineShoppingCart } from "react-icons/md";
 import { PersonOutlineOutlined } from "@mui/icons-material";
+import { HiOutlineLogout } from "react-icons/hi";
+import { useAuth0 } from "@auth0/auth0-react";
 import Cart from "../Cart/Cart";
 
 function NavBar() {
+  const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
   const [openCart, setOpenCart] = useState(false);
   const navigate = useNavigate();
 
@@ -56,16 +59,7 @@ function NavBar() {
           </div>
           <div className="flex items-center gap-6">
             <div onClick={() => navigate("/")} className="cursor-pointer">
-              Homepage
-            </div>
-            <div onClick={() => navigate("/about")} className="cursor-pointer">
-              About
-            </div>
-            <div
-              onClick={() => navigate("/contact")}
-              className="cursor-pointer"
-            >
-              Contact
+              Home
             </div>
             <div
               onClick={() => navigate("/products")}
@@ -75,7 +69,35 @@ function NavBar() {
             </div>
             <div className="flex items-center gap-4 text-[#777]">
               <AiOutlineSearch size={20} className="cursor-pointer" />
-              <PersonOutlineOutlined className="cursor-pointer" />
+              <div>
+                {isAuthenticated && (
+                  <div className="text-white">
+                    <p className="font-semibold text-xl">Hello, {user.name}</p>
+                  </div>
+                )}
+              </div>
+              <div className="flex items-center gap-1 cursor-pointer">
+                {isAuthenticated ? (
+                  <div
+                    onClick={() =>
+                      logout({
+                        logoutParams: { returnTo: window.location.origin },
+                      })
+                    }
+                    className="text-red-600"
+                  >
+                    <HiOutlineLogout size={22} />
+                  </div>
+                ) : (
+                  <div
+                    onClick={() => loginWithRedirect()}
+                    className="text-green-600 flex gap-1"
+                  >
+                    <PersonOutlineOutlined className="cursor-pointer" />
+                    <p>Login/Sign Up</p>
+                  </div>
+                )}
+              </div>
               <MdOutlineFavoriteBorder size={20} className="cursor-pointer" />
               <div
                 className="flex items-center relative cursor-pointer"
@@ -90,7 +112,7 @@ function NavBar() {
           </div>
         </div>
       </div>
-      {openCart && <Cart/>}
+      {openCart && <Cart />}
     </div>
   );
 }
