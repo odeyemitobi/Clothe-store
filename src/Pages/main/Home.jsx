@@ -46,7 +46,7 @@ function Home() {
               </p>
             </div>
             <div className="flex justify-center gap-[50px] pt-12">
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/channelproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -64,14 +64,16 @@ function Home() {
                     />
                   </div>
                 </div>
-                <h2 className="font-bold">Chanel Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#23000</h3>
-                  <h3>#17000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Chanel Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#23000</h3>
+                    <h3 className="font-bold">#17000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/herproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -81,14 +83,16 @@ function Home() {
                     <img className="w-full h-full" src={Her2} alt="Her2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Her Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#19000</h3>
-                  <h3>#13000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Her Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#19000</h3>
+                    <h3 className="font-bold">#13000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/bentleyproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -98,14 +102,16 @@ function Home() {
                     <img className="w-full h-full" src={Bent2} alt="Bent2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Bentley Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#27000</h3>
-                  <h3>#22000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Bentley Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#27000</h3>
+                    <h3 className="font-bold">#22000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/paradiseproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -115,10 +121,12 @@ function Home() {
                     <img className="w-full h-full" src={Para2} alt="Para2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Paradise Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#16000</h3>
-                  <h3>#12000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Paradise Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#16000</h3>
+                    <h3 className="font-bold">#12000</h3>
+                  </div>
                 </div>
               </div>
             </div>
@@ -216,7 +224,7 @@ function Home() {
             </div>
 
             <div className="flex justify-center gap-[50px] pt-12">
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/channelproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -234,14 +242,16 @@ function Home() {
                     />
                   </div>
                 </div>
-                <h2 className="font-bold">Chanel Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#23000</h3>
-                  <h3>#17000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Chanel Perfume</h2>
+                  <div className="gap-5">
+                    <h3 className="text-gray-500 line-through">#23000</h3>
+                    <h3 className="font-bold">#17000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/herproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -251,14 +261,16 @@ function Home() {
                     <img className="w-full h-full" src={Her2} alt="Her2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Her Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#19000</h3>
-                  <h3>#13000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Her Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#19000</h3>
+                    <h3 className="font-bold">#13000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/bentleyproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -268,14 +280,16 @@ function Home() {
                     <img className="w-full h-full" src={Bent2} alt="Bent2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Bentley Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#27000</h3>
-                  <h3>#22000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Bentley Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#27000</h3>
+                    <h3 className="font-bold">#22000</h3>
+                  </div>
                 </div>
               </div>
 
-              <div className="w-[280px] flex flex-col gap-2">
+              <div className="w-[280px] flex flex-col gap-2 hover:shadow-xl rounded-md border-2">
                 <div
                   onClick={() => navigate("/paradiseproducts")}
                   className="w-full overflow-hidden relative cursor-pointer joe"
@@ -285,10 +299,12 @@ function Home() {
                     <img className="w-full h-full" src={Para2} alt="Para2" />
                   </div>
                 </div>
-                <h2 className="font-bold">Paradise Perfume</h2>
-                <div className="font-bold flex gap-5">
-                  <h3 className="text-gray-500 line-through">#16000</h3>
-                  <h3>#12000</h3>
+                <div className="px-3 pb-5">
+                  <h2 className="font-medium">Paradise Perfume</h2>
+                  <div className="">
+                    <h3 className="text-gray-500 line-through">#16000</h3>
+                    <h3 className="font-bold">#12000</h3>
+                  </div>
                 </div>
               </div>
             </div>

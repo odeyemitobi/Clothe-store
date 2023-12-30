@@ -35,22 +35,26 @@ function Paradiseproduct() {
           </div>
         </div>
         <div className="flex-1 flex-col flex gap-7">
-          <h1 className="font-bold text-2xl">PARADISE STRONG FRAGRANCE PERFUME </h1>
-          <span className="text-blue-500 text-[2rem] font-medium">#12,000</span>
+          <h1 className="font-bold text-2xl">
+            PARADISE STRONG FRAGRANCE PERFUME{" "}
+          </h1>
+          <span className="text-[#a52a2a] text-[2rem] font-medium">
+            #12,000
+          </span>
           <p className="text-lg font-light text-justify">
-            Paradise perfume with very good frangrance that last long for more than
-            24hours and frangrance stays after washing.
+            Paradise perfume with very good frangrance that last long for more
+            than 24hours and frangrance stays after washing.
           </p>
           <div className="flex items-center gap-2">
             <button
-              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-blue-700 text-white"
+              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-black text-white"
               onClick={() => setQuantity((prev) => (prev === 1 ? 1 : prev - 1))}
             >
               -
             </button>
             {quantity}
             <button
-              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-blue-700 text-white"
+              className="w-[30px] h-[30px] text-xl flex items-center justify-center rounded-lg bg-black text-white"
               onClick={() => setQuantity((prev) => prev + 1)}
             >
               +
@@ -65,11 +69,11 @@ function Paradiseproduct() {
             </CartBtn>
           </div>
           <div className="flex gap-7">
-            <div className="flex items-center gap-2 cursor-pointer text-blue-400">
+            <div className="flex items-center gap-2 cursor-pointer text-[#a52a2a]">
               <MdOutlineFavoriteBorder />
               ADD TO WISH LIST
             </div>
-            <div className="flex items-center gap-2 cursor-pointer text-blue-400">
+            <div className="flex items-center gap-2 cursor-pointer text-[#a52a2a]">
               <FaBalanceScale />
               ADD TO COMAPRE
             </div>

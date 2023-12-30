@@ -30,7 +30,9 @@ function Cart() {
               <p className="mb-5 text-[13px]">
                 {items.desc?.substring(0, 100)}
               </p>
-              <div className="text-blue-500 text-[105x] font-medium">1 x #{items.price}</div>
+              <div className="text-[#a52a2a] text-[105x] font-medium">
+                1 x #{items.price}
+              </div>
             </div>
             <MdDelete className="cursor-pointer" color="red" size={25} />
           </div>
@@ -42,7 +44,9 @@ function Cart() {
         <div className="mb-5">
           <CartBtn>CHECKOUT</CartBtn>
         </div>
-        <span className="text-red-600 text-[16px] font-medium cursor-pointer">Reset Cart</span>
+        <span className="text-red-600 text-[16px] font-medium cursor-pointer">
+          Reset Cart
+        </span>
       </div>
     </div>
   );
