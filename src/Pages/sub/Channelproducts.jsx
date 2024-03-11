@@ -68,6 +68,7 @@ function Channelproducts() {
               </div>
             </CartBtn>
           </div>
+
           <div className="flex gap-7">
             <div className="flex items-center gap-2 cursor-pointer text-[#a52a2a]">
               <MdOutlineFavoriteBorder />
@@ -78,6 +79,7 @@ function Channelproducts() {
               ADD TO COMAPRE
             </div>
           </div>
+          
           <div className="flex flex-col gap-2 text-[1rem] mt-7 text-gray-500">
             <span>Vendor: Testimony Stores</span>
             <span>Product Type: Perfume</span>
